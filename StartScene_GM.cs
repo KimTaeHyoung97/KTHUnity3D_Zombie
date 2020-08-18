@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 
-public class GameManager1 : MonoBehaviour
+public class StartScene_GM : MonoBehaviour
 {//시작화면
     Text zombieText, gamestratText;
     Animator ani;
