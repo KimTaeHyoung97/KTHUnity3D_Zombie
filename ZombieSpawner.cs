@@ -31,8 +31,6 @@ public class ZombieSpawner : MonoBehaviour
             GameObject bullet = Instantiate(bulletPrefab, transform.position
                 , transform.rotation);//프리팹,위치,회전값
             bullet.transform.LookAt(target);//LootAt = 내 정면이 타켓을 바라보게끔 회전한다.
-
-            spawRate = Random.Range(spawnRateMin, spawnRateMax);
         }
     }
 }
