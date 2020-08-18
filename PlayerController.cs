@@ -36,9 +36,16 @@ public class PlayerController : MonoBehaviour
         rb.velocity = new Vector3(xSpeed, 0, zSpeed);
         //캐릭터 회전
         transform.LookAt(transform.position + rb.velocity);
+        
+        if (gm.hpImage.fillAmount == 0)
+        {
+            //Debug.Log("죽음");
+            ani.SetTrigger("DeathTrigger");
+            gm.EndGame();
+        }
     }
 
-    //public void Del()
+    //public void Die()
     //{
     //    gameObject.SetActive(false);
 
