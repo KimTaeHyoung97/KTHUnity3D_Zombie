@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 
 public class GameManager1 : MonoBehaviour
-{
+{//시작화면
     Text zombieText, gamestratText;
     Animator ani;
     // Start is called before the first frame update
@@ -21,7 +21,6 @@ public class GameManager1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ani.SetTrigger("WalkTrigger");
         ani.SetTrigger("WalkTrigger");
     }
     public void OnClickStart()
