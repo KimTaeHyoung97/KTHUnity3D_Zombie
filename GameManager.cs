@@ -42,13 +42,6 @@ public class GameManager : MonoBehaviour
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }
         }
-
-        if (hpImage.fillAmount == 0)
-        {
-            //Debug.Log("죽음");
-            ani.SetTrigger("DeathTrigger");
-            EndGame();
-        }
     }
 
     public void EndGame()
